@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to the Prediction</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+
+  <script>
+    var preloader = document.getElementById('preloader')
+    document.onreadystatechange = function () {
+    var state = document.readyState
+    if (state == 'interactive') {
+          document.getElementById('myPage').style.visibility="hidden";
+          document.getElementById('preloader').style.visibility="visible";
+      } else if (state == 'complete') {
+          setTimeout(function(){
+            document.getElementById('interactive');
+            document.getElementById('preloader').style.visibility="hidden";
+            document.getElementById('myPage').style.visibility="visible";
+          },500); 
+      }
+    }
+
+  </script>
+  <style>
+    .preloader-text {
+      position: fixed;  
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+    .preloader {
+      background-color: #fff;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 99999 !important;
+    }
+
+    .show {
+      background-color: #fff;
+      width: 100%;
+      height: 100%;
+      z-index: 99999 !important;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    svg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .beat-loader {
+      stroke: rgba(28, 74, 90, 0.9);
+      stroke-dasharray: 175;
+      stroke-dashoffset: 350;
+      -webkit-animation: draw 1.4s linear;
+      -moz-animation: draw 1.4s linear;
+      animation: draw 1.4s linear;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @-moz-keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+  </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <div id="preloader" class="preloader">
+    <svg width="250px" height="250px" viewBox="0 0 54 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+      <defs></defs>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path class="beat-loader" d="M0.5,38.5 L16,38.5 L19,25.5 L24.5,57.5 L31.5,7.5 L37.5,46.5 L43,38.5 L53.5,38.5" id="Path-2" stroke-width="2" sketch:type="MSShapeGroup"></path>
+      </g>
+    </svg>
+  </div>
+  <!--banner-->
+  <section id="banner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+            
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li class=""><a href="/">Services</a></li>
+                <li class=""><a href="/">Signup</a></li>
+                <li class=""><a href="/">Login</a></li>
+                <li class=""><a href="/">About</a></li>
+                <li class=""><a href="/">Testimonial</a></li>
+                <li class=""><a href="/">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-logo text-center">
+            
+            </div>
+            <div class="banner-text text-center">
+              <h1 class="white">train your model</h1>
+              <h2 class="white">Get accurate result</h2>
+              
+              <a href="/" class="btn btn-appoint">home.</a>
+            </div>
+            <div class="overlay-detail text-center">
+              <a href="/"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+  <!--results-->
+  <section id="results" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="ser-title">Model Training</h2>
+          <hr class="botm-line">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <h3>Train your model accurately</h3>
+          <div class="space"></div>
+          <p><i class="fa fa-pie-chart fa-fw pull-left fa-2x"></i>Get the analytics of your test data.</p>
+          <div class="space"></div>
+          <p><i class="fa fa-bar-chart fa-fw pull-left fa-2x"></i>Tally your data by Training with native instances.</p>
+          <div class="space"></div>
+          <p><i class="fa fa-shield fa-fw pull-left fa-2x"></i>Secure your results with MaCfee security</p>
+        </div>
+        <div class="col-md-8 col-sm-8 marb20">
+          <div class="contact-info">
+            <h3 class="cnt-ttl">Please Enter your details correctly</h3>
+            <div class="space"></div>
+            <div id="sendmessage">Thank you for registering with us.</div>
+            <div id="errormessage"></div>
+            <form action="/user-data" id="CVD_form" method="post">
+              <div class="form-group"> 
+                <label for="age">Age </label>
+                <input type="number" step="1" class="form-control" name="age" id="age">
+              </div>
+              <div class="form-group">
+                <label for="sex">Gender </label> 
+                <div>
+                  <select class="form-control" name="sex">
+                    <option>male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cp">CP </label>
+                <div>
+                <input type="number" step="0" class="form-control br-radius-zero" name="cp" id="cp">
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="trestbps">Trestbps </label>
+                <div>
+                <input type="number" step="0" class="form-control br-radius-zero" name="trestbps" id="trestbps">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="chol">CHOL </label>
+                <div>
+                <input type="number" step="0" class="form-control br-radius-zero" name="chol" id="chol">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="fbs">FBS </label>
+                <div>
+                <input type="number" step="0" class="form-control br-radius-zero" name="fbs" id="fbs">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="restecg">Restecg </label>
+                <div>
+                <input type="number" step="0" class="form-control br-radius-zero" name="restecg" id="restecg">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="thalach">Thalach </label>
+                <div>
+                <input type="number" step="0" class="form-control br-radius-zero" name="thalach" id="thalach">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exang">Exang </label>
+                <div>
+                <input type="number" step="0" class="form-control br-radius-zero" name="exang" id="exang">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="oldpeak">Oldpeak </label>
+                <div>
+                <input type="number" step="0" class="form-control br-radius-zero" name="oldpeak" id="oldpeak">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="slope">Slope </label>
+                <div>
+                <input type="number" step="0" class="form-control br-radius-zero" name="slope" id="slope">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="ca">CA </label>
+                <div>
+                <input type="number" step="0" class="form-control br-radius-zero" name="ca" id="ca">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="thal">Thal </label>
+                <div>
+                <input type="number" step="0" class="form-control br-radius-zero" name="thal" id="thal">
+                </div>
+              </div>
+              <input type="submit" id="btn_preloader" class="btn btn-form btn-block" value="Submit"/>
+            </form>
+            <script>
+              (function (d) {
+                
+                var span = d.createElement('span');
+                  var txt = d.createTextNode('Processing...')
+                  var pre = document.getElementById('preloader');
+                d.getElementById('CVD_form').onsubmit = function () {
+                  d.getElementById('preloader').style.visibility = 'visible';
+                  d.getElementById('myPage').style.visibility = 'hidden';
+                  span.appendChild(txt);
+                  span.classList.add('preloader-text');
+                  pre.appendChild(span);
+                }; 
+              }(document));
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ results--> 
+  <!--footer-->
+  <footer id="footer">
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            © All Rights Reserved By CARDIO-D20
+            <div class="credits">
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </footer>
+  <!--/ footer-->
+
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/jquery.easing.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/custom.js"></script>
+  <script src="static/contactform/contactform.js"></script>
+
+</body>
+
+</html>
